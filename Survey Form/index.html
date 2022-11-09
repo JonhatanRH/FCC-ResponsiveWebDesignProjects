@@ -1,0 +1,223 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body class="container">
+    <center>
+      <!--Primer punto(id=title)-->
+      <h1 id="title">Proyect Survey Form</h1>
+      <!--Segundo punto(id=description)-->
+      <p id="description">Survey to know about you</p>
+    </center>
+    <!--Tercer punto(survey form)-->
+    <form id="survey-form">
+        <div class="form-group">
+            <!--Cuarto punto(id=name)-->
+            <label id="name-label" for="name">Name</label>
+            <input 
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                maxlength="30"
+                required
+            >
+        </div>
+        <div class="form-group">
+            <!--Quinto elemento(id=email)-->
+            <!--#6(valida email con html)-->
+            <label id="email-label" for="email">Email</label>
+            <input 
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+                >
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="age">Age</label>
+            <!--Septimo elemento(id=nmber)-->
+            <!--Octavo elemento(number validation)-->
+            <!--Noveno elemento(min-max)-->
+            <!--decimo elemento(label -name-number-email)-->
+            <input 
+              id="number"
+              type="number"
+              name="age"
+              class="form-control"
+              max="99"
+              min="10"
+              placeholder="Age"
+            >
+            <!--Onceavo elemento(texto de descripción de name-email-number)-->
+        </div>
+        <div class="form-group">
+          <label id="date" for="date">Date of birth</label>
+          <input 
+            type="date" 
+            name="fec"
+            size="20"
+            class="form-control"
+          >
+        </div>
+        <div class="form-group">
+            <p>Where are you from?</p>
+            <!--#12 (id= dropdown)-->
+            <select id="dropdown" name="country" class="form-control">
+              <option disabled selected value>Select your country</option>
+              <option value="isc">Mexico</option>
+              <option value="itc">Unites States</option>
+              <option value="ibt">Canada</option>
+              <option value="Nocar">Colombia</option>
+              <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+          <label id="color" for="color">Select your favorite color</label>
+          <input 
+            type="color"
+            name="fav_color"
+            size="20"
+            class="form-group"
+          >
+        </div>
+        <div class="form-group">
+          <p>Gender</p>
+          <label>
+            <!--#13(radio buttons with name atribute)-->
+            <input
+              name="gender"
+              type="radio"
+              class="input-radio"
+              value="female"
+              id="female"
+            />Female</label
+          >
+          <label>
+            <input
+              name="gender"
+              type="radio"
+              class="input-radio"
+              value="male"
+              id="male"
+            />Male</label
+          >
+          <label
+            ><input
+              name="gender"
+              type="radio"
+              class="input-radio"
+              value="other"
+              id="other"
+            />Other</label
+          >
+        </div>
+
+        <div>
+          <p>What are your favorite activities?</p>
+          <!--#14(checkboxes with value attribute)-->
+          <label id="dancing" for="dancing">
+            <input 
+              type="checkbox" 
+              name="activities" 
+              value="dancing"
+            >
+            Dancing</label>
+          <label id="series" for="series">
+            <input 
+              type="checkbox" 
+              name="activities"
+              value="series"
+            >
+          Watch Series</label>
+          <label id="sports" for="sports">
+            <input 
+              type="checkbox" 
+              name="activities"
+              value="sports"
+            >
+          Play sports</label>
+          <label id="sing" for="sing">
+            <input 
+              type="checkbox" 
+              name="activities"
+              value="sing" 
+            >
+          Sing</label>
+          <label id="music" for="music">
+            <input 
+              type="checkbox" 
+              name="activities" 
+              value="music"
+            >
+          Listen to music</label>
+          <label id="read" for="read">
+            <input 
+              type="checkbox" 
+              name="activities"
+              value="read"
+            >
+          Read a book</label>
+          <label id="cook" for="cook">
+            <input 
+              type="checkbox" 
+              name="activities"
+              value="cook"
+            >
+          Cooking</label>
+          <label id="photo" for="photo">
+            <input 
+              type="checkbox" 
+              name="activities"
+              value="photos"
+            >
+          Take photographs</label>
+          <label id="shop" for="shop">
+            <input 
+              type="checkbox" 
+              name="activities"
+              value="shop"
+            >
+          Shopping</label>
+          <label id="pet" for="pet">
+            <input 
+              type="checkbox" 
+              name="activities"
+              value="pet"
+            >
+          Play withe your pet</label>
+        </div>
+        <br>
+        <div>
+          <p>Some comment about your self...</p>
+          <!--#15 textarea-->
+          <textarea 
+            class="form-group"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div>
+          <button 
+          type="reset" 
+          name="b_limpiar" 
+          value="Resert the survey" 
+          class="boton_azul">
+          Reset the survey
+          </button>
+        </div>
+        <div>
+          <!--#16(id= submit-->
+          <input 
+            type="submit"
+            name="submit"
+            value="Submit"
+            id="submit"
+            class="submit-button boton_azul"
+            >
+        </div>
+      
+    </form>
+
+</body>
